@@ -13,7 +13,7 @@ function NavigationBar() {
         </p>
       </div>
       <div className="flex gap-12 items-center">
-        <button className="bg-gradient-to-r py-2 px-6 rounded-md text-[14px] from-[#9551f0] to-[#c61ed4] ">
+        <button className="bg-gradient-to-r font-medium py-2 px-6 rounded-md text-[14px] from-[#9551f0] to-[#c61ed4] ">
           Refferal link
         </button>
         <div className="flex gap-2">
