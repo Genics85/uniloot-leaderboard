@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.red{
+.red {
   border: 2px solid red;
 }
 
-.blue{
-  border:2px solid blue;
+.blue {
+  border: 2px solid blue;
+}
+
+.radial-gradient-pink {
+  background-image: radial-gradient(
+    closest-side,
+    #c51ed469,
+    transparent
+  );
+}
+.radial-gradient-blue {
+  background-image: radial-gradient(
+    closest-side,
+    #3E0D78,
+    transparent
+  );
 }

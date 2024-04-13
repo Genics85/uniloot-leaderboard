@@ -3,7 +3,7 @@ import avatar from "../assets/avatar.png"
 
 function NavigationBar() {
   return (
-    <div className="container mt-5 mx-auto text-white flex items-center justify-between">
+    <div className="z-10 container mt-5 mx-auto text-white flex items-center justify-between">
       <div className="flex gap-3 items-center">
         <div>
           <img src={logo} alt="" />
