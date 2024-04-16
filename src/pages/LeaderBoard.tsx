@@ -162,13 +162,45 @@ function LeaderBoard() {
                     )}
                   </div>
                 </div>
-                <div className="bg-gradient-to-b mt-16 p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] w-[220px]">
-                  <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
-                    <p className="font-bold text-[14px]">Level up bonus</p>
-                    <p>
-                      Total price:{" "}
-                      <span className="font-bold">0.5 uniloots</span>
-                    </p>
+                <div
+                  className="
+                  grid grid-cols-2 gap-5 mx-auto
+                "
+                >
+                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                    <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
+                      <p className="font-bold text-[14px]">Level up bonus</p>
+                      <p className="text-center text-[11px]">
+                        Total price:{" "}
+                        <span className="font-bold">0.5 uniloots</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                    <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
+                      <p className="font-bold text-[14px]">Recharge</p>
+                      <p className="text-center text-[11px]">
+                        Activate your recharge and claim
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                    <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
+                      <p className="font-bold text-[14px]">Weekly bonus</p>
+                      <p className="text-center text-[11px]">
+                        Recieve weekly bonuses of trading volume 1% approximate
+                        based on your current trading volume
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                    <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
+                      <p className="font-bold text-[14px]">Monthly bonus</p>
+                      <p className="text-center text-[11px]">
+                        Recieve weekly bonuses of trading volume 1% approximate
+                        based on your current trading volume
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -312,7 +344,7 @@ function LeaderBoard() {
               <div className="w-full flex md:flex-row flex-col-reverse gap-6 py-4 px-4 h-full bg-gradient-to-b rounded-md from-[#030012] via-brand-blue via-90% to-[#030012] justify-between items-start">
                 <div className=" flex flex-col gap-2 font-medium mt-6">
                   <p className="text-[20px] ">CHALLENGE 1</p>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex text-slate-300 gap-2 items-center">
                     <div className="size-4 bg-gradient-to-r p-[2px] from-[#9551f0] to-brand-pink"></div>
                     <p>Complete chanllenge for daily reward</p>
                   </div>

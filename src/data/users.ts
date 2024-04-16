@@ -16,17 +16,17 @@ export const userData: User[] = [
     points: 60000,
   },
   {
-    name: "Mannesah ",
+    name: "Andy Dosty ",
     level: BROWN_DIAMOND,
     points: 57000,
   },
   {
-    name: "Eugene ",
+    name: "Andy Dosty ",
     level: BLUE_DIAMOND,
     points: 54000,
   },
   {
-    name: "FM100 ",
+    name: "Andy Dosty ",
     level: BROWN_DOLPHIN,
     points: 52000,
   },
