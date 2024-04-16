@@ -28,7 +28,7 @@ function LeaderBoard() {
   const [level, setLevel] = useState<number>(1);
 
   return (
-    <div className=" container z-10 my-20 flex flex-col gap-20 items-center mx-auto">
+    <div className=" container z-10 my-20 flex flex-col gap-y-28 items-center mx-auto">
       <div className="flex w-full items-center justify-center md:flex-row flex-col gap-10">
         <LeaderboardRank name="Andy Dosty" position="1st" runner="Winner" />
         <LeaderboardRank name="Mannesah" position="2nd" runner="First runner" />
@@ -142,6 +142,7 @@ function LeaderBoard() {
                       (vip: number, i: number) => {
                         return (
                           <div
+                            onClick={() => setLevel(vip)}
                             key={i}
                             className="rounded-full w-full bg-gradient-to-r p-[1px] from-[#9551f0] to-brand-pink"
                           >
