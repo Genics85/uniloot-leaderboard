@@ -26,6 +26,7 @@ function LeaderBoard() {
   const [selectedLevel, setSelectedLevel] = useState<number>(0);
   const [vipClub, setVipClub] = useState<vipClubSection>("CLUBS");
   const [level, setLevel] = useState<number>(1);
+  const [selectedLevelCard, setSelectedLevelCard] = useState<number>(4);
 
   return (
     <div className=" container z-10 my-20 flex flex-col gap-y-28 items-center mx-auto">
@@ -141,14 +142,14 @@ function LeaderBoard() {
                     {[level, level + 1, level + 2, level + 3, level + 4].map(
                       (vip: number, i: number) => {
                         return (
-                          <div
-                            onClick={() => setLevel(vip)}
+                          <button
+                            onClick={() => setSelectedLevelCard(vip)}
                             key={i}
                             className="rounded-full w-full bg-gradient-to-r p-[1px] from-[#9551f0] to-brand-pink"
                           >
                             <div
                               className={`${
-                                vip == level
+                                vip == selectedLevelCard
                                   ? "bg-gradient-to-r p-[2px] from-[#9551f0] to-brand-pink"
                                   : "bg-brand-blue"
                               } rounded-full flex items-center justify-center h-full w-full px-2 py-1 `}
@@ -157,7 +158,7 @@ function LeaderBoard() {
                                 VIP {vip}
                               </p>
                             </div>
-                          </div>
+                          </button>
                         );
                       }
                     )}

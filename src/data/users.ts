@@ -30,4 +30,34 @@ export const userData: User[] = [
     level: BROWN_DOLPHIN,
     points: 52000,
   },
+  {
+    name: "Andy Dosty ",
+    level: BROWN_DOLPHIN,
+    points: 52000,
+  },
+  {
+    name: "Andy Dosty",
+    level: WHITE_DIAMOND,
+    points: 60000,
+  },
+  {
+    name: "Andy Dosty ",
+    level: BROWN_DIAMOND,
+    points: 57000,
+  },
+  {
+    name: "Andy Dosty ",
+    level: BLUE_DIAMOND,
+    points: 54000,
+  },
+  {
+    name: "Andy Dosty ",
+    level: BROWN_DOLPHIN,
+    points: 52000,
+  },
+  {
+    name: "Andy Dosty ",
+    level: BROWN_DOLPHIN,
+    points: 52000,
+  }
 ];
