@@ -121,6 +121,7 @@ function LeaderBoard() {
                       <button
                         onClick={() => {
                           setSelectedLevel(i);
+                          setSelectedLevelCard(5*i+1);
                           setLevel(5 * i + 1);
                         }}
                         key={i}
