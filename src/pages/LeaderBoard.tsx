@@ -7,6 +7,7 @@ import orca_icon from "../assets/levels/icons/orca_icon.svg";
 import shark_icon from "../assets/levels/icons/shark_icon.svg";
 import whale_icon from "../assets/levels/icons/whale_icon.svg";
 import star_coin from "../assets/levels/star_coin.svg";
+import back_arrow from "../assets/levels/icons/back_arrow.svg";
 import { useState } from "react";
 import { userData } from "../data/users";
 
@@ -26,7 +27,7 @@ function LeaderBoard() {
   const [selectedLevel, setSelectedLevel] = useState<number>(0);
   const [vipClub, setVipClub] = useState<vipClubSection>("CLUBS");
   const [level, setLevel] = useState<number>(1);
-  const [selectedLevelCard, setSelectedLevelCard] = useState<number>(4);
+  const [selectedLevelCard, setSelectedLevelCard] = useState<number>(1);
 
   return (
     <div className=" container z-10 my-20 flex flex-col gap-y-28 items-center mx-auto">
@@ -115,13 +116,19 @@ function LeaderBoard() {
                   vipClub == "DETAILS" ? "flex" : "hidden"
                 } flex-col gap-6`}
               >
+                <button
+                  onClick={() => setVipClub("CLUBS")}
+                  className="self-start rounded-full p-2 bg-[#100f34]"
+                >
+                  <img className="w-4" src={back_arrow} alt="" />
+                </button>
                 <div className="flex gap-2 justify-between">
                   {levelIcons.map((icon: string, i: number) => {
                     return (
                       <button
                         onClick={() => {
                           setSelectedLevel(i);
-                          setSelectedLevelCard(5*i+1);
+                          setSelectedLevelCard(5 * i + 1);
                           setLevel(5 * i + 1);
                         }}
                         key={i}
@@ -179,7 +186,11 @@ function LeaderBoard() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                  <div
+                    className={`${
+                      selectedLevelCard > 10 ? "flex" : "hidden"
+                    } bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]`}
+                  >
                     <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
                       <p className="font-bold text-[14px]">Recharge</p>
                       <p className="text-center text-[11px]">
@@ -187,7 +198,11 @@ function LeaderBoard() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                  <div
+                    className={`${
+                      selectedLevelCard > 10 ? "flex" : "hidden"
+                    } bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]`}
+                  >
                     <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
                       <p className="font-bold text-[14px]">Weekly bonus</p>
                       <p className="text-center text-[11px]">
@@ -196,7 +211,11 @@ function LeaderBoard() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]">
+                  <div
+                    className={`${
+                      selectedLevelCard > 10 ? "flex" : "hidden"
+                    } bg-gradient-to-b p-[1px] from-[#ff0c72] rounded-md to-[#f289b5] h-[96px] md:h-[96px] md:w-[220px]`}
+                  >
                     <div className="w-full h-full bg-brand-blue rounded-md flex flex-col items-center justify-center">
                       <p className="font-bold text-[14px]">Monthly bonus</p>
                       <p className="text-center text-[11px]">
@@ -351,7 +370,7 @@ function LeaderBoard() {
                     <div className="size-4 bg-gradient-to-r p-[2px] from-[#9551f0] to-brand-pink"></div>
                     <p>Complete chanllenge for daily reward</p>
                   </div>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex text-slate-300 gap-2 items-center">
                     <div className="size-4 bg-gradient-to-r p-[2px] from-[#9551f0] to-brand-pink"></div>
                     <p>Complete chanllenge for daily reward</p>
                   </div>
